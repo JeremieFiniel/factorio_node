@@ -3,6 +3,10 @@
 	"name": "Fractapion",
 	"main": "app.js",
 	"version": "0.1.0",
+	"scripts": {
+		"deploy": "gcloud app deploy",
+		"start": "node app.js"
+	},
 	"dependencies": {
 		"ejs": "*",
 		"express": "^4.16.3",
