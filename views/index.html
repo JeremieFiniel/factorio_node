@@ -1,0 +1,222 @@
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<link rel="stylesheet" href="css/index.css"></link>
+		<title>Fractapion</title>
+
+	</head>
+
+	<body>
+		<h1>Fractapion</h1>
+		<form class="connection" method="post" action="index.html">
+			<p>
+				<label class="labPseudo">Pseudo</label>
+				<input type="text" id="pseudo" class="pseudo" placeholder="Ex : Toto" autofocus />
+				<!--button type="submit" class="conn">Connexion</button-->
+				<a href="#" class="conn">Connexion</a>
+			</p>
+		</form>
+		<div class="game">
+			<div class="wellcome">
+				<p>Bienvenue <span class="pseudo"></span></p>
+				<p class="info"></p>
+				<p class="state"></p>
+				<p class="this">Vous <img src=""/></p>
+				<p class="tour">A de jouer</p>
+				<a href="#" class="restart">Rejouer</a>
+			</div>
+			<div class="ruls">
+				<h2>Les Règles</h2>
+				<ol>
+					<li>vgdfhazertyuijhgfdserthjnbvcdfghjk,nbvcftyujk,ncdfghjk,nbvcfghjk,nb</li>
+					<li>vgdfhazertyuijhgfdserthjnbvcdfghjk,nbvcftyujk,ncdfghjk,nbvcfghjk,nb</li>
+					<li>vgdfhazertyuijhgfdserthjnbvcdfghjk,nbvcftyujk,ncdfghjk,nbvcfghjk,nb</li>
+				</ol>
+			</div>
+			<table class="fract">
+				<tr>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="fractx">
+							<tr>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+								<td><img src="img/croix.png"/></td>
+							</tr>
+							<tr>
+								<td><img src="img/croix.png"/></td>
+								<td><img src="img/rond.png"/></td>
+								<td><img src="img/vide.png"/></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+
+<script src="javascript/index.js"></script>

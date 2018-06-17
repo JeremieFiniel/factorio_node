@@ -1,0 +1,88 @@
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+		<link rel="stylesheet" href="css/index.css"></link>
+		<title>Fractapion</title>
+
+	</head>
+
+        <body>
+		<!--
+		<form class="connection">
+			<p>
+				<label class="labPseudo">Pseudo</label>
+				<label class="invalide">Pseudo incorrect</label>
+				<input type="text" id="pseudo" class="pseudo" placeholder="Ex : Toto" autofocus />
+				<a href="#" class="conn">Connexion</a>
+			</p>
+		</form>
+		-->
+                <div id="popupMenu" class="popup">
+                    <div class="chooseGame">
+                        <h1>Fractapion</h1>
+                        <div class="ruls">
+                            <h2>Les Règles</h2>
+                            <ul>
+                                <li>Le fractapion est un morpion composé de neuf petits morpions.</li>
+                                <li>Pour posséder une grande case il faut gagner le petit morpion qu'elle contient.</li>
+                                <li>
+                                    La case dans laquel un joueur jou dans un petit morpion est celle dans laquelle l'adversaire devra jouer dans le grand fractapion.
+                                    <p class="exemple">Par exemple si le joueur 1 jou dans le petit morpion central dans la case en haut à droite, le joueur 2 devrat jouer ensuite dans le petit morpion ce situant en haut à droite.</p>
+                                </li>
+                                <li>Lorsqu'un joueur doit jouer dans un petit morpion déjà terminé, le joueur peut jouer dans n'importe quel petit morpion non terminé.</li>
+                                <li>Un petit morpion terminer à égalité appartient au deux joueurs dans le fractapion.</li>
+                                <li>Pour gagner un morpion, et le fractapion, il faut alligner trois fois sont signe.</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btnMenu localGame">Jouer en local</a>
+                        <a href="#" class="btnMenu multiGame">Jouer en réseau</a>
+                        <a href="#" class="btnMenu friendGame">Jouer avec un ami</a>
+                    </div>
+                </div>
+
+                <div id="popupRegles" class="popup close">
+                    <div class="ruls">
+                        <img class="btnClose" src="" title="close">
+                        <h2>Les Règles</h2>
+                        <ul>
+                            <li>Le fractapion est un morpion composé de neuf petits morpions.</li>
+                            <li>Pour posséder une grande case il faut gagner le petit morpion qu'elle contient.</li>
+                            <li>
+                                La case dans laquel un joueur jou dans un petit morpion est celle dans laquelle l'adversaire devra jouer dans le grand fractapion.
+                                <p class="exemple">Par exemple si le joueur 1 jou dans le petit morpion central dans la case en haut à droite, le joueur 2 devrat jouer ensuite dans le petit morpion ce situant en haut à droite.</p>
+                            </li>
+                            <li>Lorsqu'un joueur doit jouer dans un petit morpion déjà terminé, le joueur peut jouer dans n'importe quel petit morpion non terminé.</li>
+                            <li>Un petit morpion terminer à égalité appartient au deux joueurs dans le fractapion.</li>
+                            <li>Pour gagner un morpion, et le fractapion, il faut alligner trois fois sont signe.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <div class="btnRegles">
+                        <img src="" title="imgReles">
+                        <p>Les règles</p>
+                    </div>
+                    <div class="wellcome">
+                            <p class="bienvenue">Bienvenue <span class="pseudo"></span></p>
+                            <p class="gameId"></p>
+                            <p class="youWin">Bravo vous avez gagné</p>
+                            <p class="youLose">Vous avez perdu</p>
+                            <p class="finish">Personnes n'a gagné</p>
+                            <p class="info"></p>
+                            <p class="state"></p>
+                            <p class="this">Vous ête le joueur : <img src=""/></p>
+                            <p class="turn">A de jouer</p>
+                    </div>
+                    <span id="fract"></span>
+		</div>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="javascript/morpion.js"></script>
+	<script type="text/javascript" src="javascript/local.js"></script>
+	<script type="text/javascript" src="javascript/multi.js"></script>
+	<script type="text/javascript" src="javascript/app.js"></script>
+</html>
+
