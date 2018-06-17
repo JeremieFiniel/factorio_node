@@ -1,8 +1,14 @@
 {
 	"author": "Jérémie Finiel",
 	"name": "Fractapion",
+	"description": "Application de fractapion",
 	"main": "app.js",
 	"version": "0.1.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JeremieFiniel/fractrapion_node.git"
+	},
 	"scripts": {
 		"deploy": "gcloud app deploy",
 		"start": "node app.js"
